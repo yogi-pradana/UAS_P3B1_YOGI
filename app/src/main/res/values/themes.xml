@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.UAS_P3B1_YOGI" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#F4347F</item>
+        <!-- Second Color -->
+        <item name="colorSecondary">#FA9DBC</item>
+        <item name="android:statusBarColor">@color/pink</item>
+    </style>
+
+    <style name="Theme.UAS_P3B1_YOGI" parent="Base.Theme.UAS_P3B1_YOGI" />
+
+    <style name="App.Custom.Indiator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">#F4347F</item>
+    </style>
+</resources>
