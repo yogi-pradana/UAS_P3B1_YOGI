@@ -1,8 +1,10 @@
 plugins {
-    alias(libs.plugins.android.application)
+//    alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.kotlin.kapt)
-    alias(libs.plugins.google.services)
+//    alias(libs.plugins.google.services)
+    id("com.android.application")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -55,14 +57,16 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation(libs.androidx.activity)
     implementation(libs.androidx.room.ktx)
     implementation(libs.androidx.room.common)
     implementation (libs.glide)
+//    kapt("com.github.bumptech.glide:compiler:4.16.0")
+//    implementation(platform(libs.firebase.bom))
 
-    implementation(platform(libs.firebase.bom))
+    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
+    implementation("com.google.firebase:firebase-analytics")
 
     // Firebase Realtime Database
-    implementation(libs.firebase.database.ktx)
+//    implementation(libs.firebase.database.ktx)
     kapt(libs.androidx.room.compiler)
 }

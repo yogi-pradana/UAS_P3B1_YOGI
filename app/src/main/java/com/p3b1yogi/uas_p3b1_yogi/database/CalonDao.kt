@@ -15,9 +15,9 @@ interface CalonDao {
     @Update
     fun update(local: Calon)
 
-    @Query("DELETE FROM calon_table")
+    @Query("DELETE FROM calon_tabel")
     fun truncateTable()
 
-    @Query("SELECT * FROM calon_table")
+    @Query("SELECT * FROM calon_tabel")
     fun allPostsLocal(): LiveData<List<Calon>>
 }

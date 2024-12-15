@@ -163,14 +163,14 @@
 
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/gettiket"
+                android:id="@+id/choose"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/genre"
                 android:fontFamily="@font/mmedium"
-                android:text="Get Ticket"
+                android:text="Choose"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
