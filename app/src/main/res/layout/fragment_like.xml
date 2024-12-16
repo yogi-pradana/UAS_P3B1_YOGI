@@ -29,4 +29,13 @@
             android:textSize="28sp" />
     </LinearLayout>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLike"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:padding="10dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
 </FrameLayout>

@@ -63,8 +63,25 @@ dependencies {
 //    kapt("com.github.bumptech.glide:compiler:4.16.0")
 //    implementation(platform(libs.firebase.bom))
 
+//    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
+//    implementation("com.google.firebase:firebase-analytics")
+//    implementation("com.google.firebase:firebase-auth:21.0.1")
+
+    // Firebase dependencies
     implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
     implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-auth:21.0.1")
+    implementation("com.google.firebase:firebase-firestore-ktx")
+
+    // Firebase Realtime Database
+    implementation(libs.firebase.database.ktx)
+    implementation(libs.firebase.auth.ktx)
+    implementation(libs.firebase.firestore.ktx)
+
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
+    implementation("androidx.activity:activity-ktx:1.7.2")
 
     // Firebase Realtime Database
 //    implementation(libs.firebase.database.ktx)
